@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -11,72 +14,30 @@
 <body>
 <main>
   <section class="cards">
-    <div class="card">
-      <div>
-        <img src="" alt="">
-        <p>Report by</p>
-        <h2>Jeremy Robson</h2>
-      </div>
-      <p>Daily</p>
-      <p>Weekly</p>
-      <p>Monthly</p>
-    </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
+    <div class="card-main">
+     <div class="card-main-header">
+      <img src="/images/image-jeremy.png" alt="">
+      <p class="card-main-text">Report by</p>
+      <h2 class="card-main-name">Jeremy Robson</h2>
+     </div>
+      <div class="card-main-footer">
+        <p>Daily</p>
+        <p class="active">Weekly</p>
+        <p>Monthly</p>
       </div>
     </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="" alt="">
-      <div>
-        <h3>Work</h3>
-        <img src="" alt="">
-        <h2></h2>
-        <p>last week - 36hrs</p>
+
+    <div class="card work">
+      <img src="/images/icon-work.svg" alt="" class="header-icon">
+      <div class="card-footer">
+        <span>Work</span>
+        <img src="/images/icon-ellipsis.svg" alt="">
+        <span class="card-footer-hrs">32hrs</span>
+        <p>Last week - 36hrs</p>
       </div>
     </div>
   </section>
 </main>
-  
+
 </body>
 </html>
