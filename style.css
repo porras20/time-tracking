@@ -30,7 +30,7 @@ main{
 section{
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
@@ -83,37 +83,64 @@ section{
 
 /* card */
 
-.card{
-    max-height: 200px;
-    width: 250px;
-    border-radius: 12px;
-    padding-top: 2rem;
-}
-.card .header-icon{
-    position: relative;
-    float: right;
-    width: 3.5rem;
+.card {
+    display: grid;
+    grid-template-rows: 50px 100px;
+    height: 90%;
+    border-radius: 10px;
 }
 
-.work{
-    background-color: var(--Light-red-work);
+.card-icon{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .card-footer{
-    padding: 1rem 0 1rem 1rem;
-    
+    cursor: pointer;
+    height: 100%;
+    margin-top: -15px;
+    padding: 1rem;
+    border-radius: 12px;
     background-color: var(--Dark-blue);
-    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card-footer:hover{
+    background-color: var(--Desaturated-blue);
+    transform: translateY(-3px);
 }
 
 .card-footer img{
     float: right;
-    margin-right: 1rem;
 }
 
-.card-footer .card-footer-hrs {
-    margin: 1rem;
+.card-footer-hrs{
+    font-size: 2rem;
+    font-weight: 200;
     display: block;
-    font-size: 3rem;
-    font-weight: 300;
 }
+.work{
+    
+    background-color: var(--Light-red-work);
+}
+
+.study{
+    background-color: var(--Light-red-study);
+}
+
+.play{
+    background-color: var(--Soft-blue-play);
+}
+
+.social{
+    background-color: var(--Violet-social);
+}
+
+.exercise{
+    background-color: var(--Lime-green-exercise);
+}
+
+.self{
+    background-color: var(--Soft-orange-self);
+}
+
